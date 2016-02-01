@@ -55,10 +55,10 @@ class MenuController
    end
    
    def entry_n_submenu
-       print "Entry number to view"
+       print "Entry number to view: "
        selection = gets.chomp.to_i
        
-       if selection < @address_boo.entries.count
+       if selection < @address_book.entries.count
            puts @address_book.entries[selection]
            puts "Press enter to return to the main menu"
            gets.chomp
