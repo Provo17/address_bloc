@@ -34,4 +34,9 @@ class AddressBook
      
      @entries.insert(index, Entry.new(name, phone_number, email))
      end
+     
+     # destroy method assignmnt 23
+     def destroy
+         @entries = []
+     end
 end

@@ -14,7 +14,8 @@ class MenuController
      puts "2 - Create an entry"
      puts "3 - Search for an entry"
      puts "4 - Import entries from a CSV"
-     puts "5 - Exit"
+     puts "5 - Destroy all entries"
+     puts "6 - Exit"
      print "Enter your selection: "
  
  
@@ -37,7 +38,12 @@ class MenuController
        system "clear"
        read_csv
        main_menu
-     when 5
+     when 5 
+     system "clear"
+     @address_book.destroy
+     puts "All entries remeoved"
+     main_menu
+     when 6
        puts "Good-bye!"
  
        exit(0)
